@@ -1,0 +1,499 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/hustcc/timeago.js#readme"
+
+    >timeago.js (v3.0.1)</a>
+</h1>
+<h4>timeago.js is a simple library (only 2kb) to used to format datetime with `*** time ago` statement. eg: '3 hours ago'. localization supported.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.timeago.js">module timeago.js</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.js">
+            function <span class="apidocSignatureSpan">timeago.</span>js
+            <span class="apidocSignatureSpan">(t, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.cancel">
+            function <span class="apidocSignatureSpan">timeago.js.</span>cancel
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.default">
+            function <span class="apidocSignatureSpan">timeago.js.</span>default
+            <span class="apidocSignatureSpan">(t, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.js.default">
+            function <span class="apidocSignatureSpan">timeago.js.</span>js.default
+            <span class="apidocSignatureSpan">(t, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.js.timeago">
+            function <span class="apidocSignatureSpan">timeago.js.</span>js.timeago
+            <span class="apidocSignatureSpan">(nowDate, defaultLocale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.register">
+            function <span class="apidocSignatureSpan">timeago.js.</span>register
+            <span class="apidocSignatureSpan">(t, e)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.timeago.js.default">module timeago.js.default</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.default.default">
+            function <span class="apidocSignatureSpan">timeago.js.</span>default
+            <span class="apidocSignatureSpan">(t, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.default.cancel">
+            function <span class="apidocSignatureSpan">timeago.js.default.</span>cancel
+            <span class="apidocSignatureSpan">(t)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.default.register">
+            function <span class="apidocSignatureSpan">timeago.js.default.</span>register
+            <span class="apidocSignatureSpan">(t, e)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.timeago.js.timeago">module timeago.js.timeago</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.timeago.timeago">
+            function <span class="apidocSignatureSpan">timeago.js.</span>timeago
+            <span class="apidocSignatureSpan">(nowDate, defaultLocale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.timeago.cancel">
+            function <span class="apidocSignatureSpan">timeago.js.timeago.</span>cancel
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.timeago.default">
+            function <span class="apidocSignatureSpan">timeago.js.timeago.</span>default
+            <span class="apidocSignatureSpan">(nowDate, defaultLocale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.timeago.js.timeago.register">
+            function <span class="apidocSignatureSpan">timeago.js.timeago.</span>register
+            <span class="apidocSignatureSpan">(locale, localeFunc)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.timeago.js" id="apidoc.module.timeago.js">module timeago.js</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.js" id="apidoc.element.timeago.js.js">
+        function <span class="apidocSignatureSpan">timeago.</span>js
+        <span class="apidocSignatureSpan">(t, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function f(t, e){return new d(t,e)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.cancel" id="apidoc.element.timeago.js.cancel">
+        function <span class="apidocSignatureSpan">timeago.js.</span>cancel
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cancel = function (t){var e;if(t)(e=c(t))&#x26;&#x26;(clearTimeout(e),delete v[e]);else{for(e in v)clearTimeout(e);v={}}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+js code
+```js
+var timeagoInstance = timeago();
+var nodes = document.querySelectorAll(&#x27;.needs_to_be_rendered&#x27;);
+// use render method to render nodes in real time
+timeagoInstance.render(nodes, &#x27;zh_CN&#x27;);
+// cancel real-time render for every node
+timeago.<span class="apidocCodeKeywordSpan">cancel</span>()
+// or for the specific one
+timeago.cancel(nodes[0])
+```
+
+The input for `render` method should be DOM object/array, pure javascript DOM node or jQuery DOM object.
+
+The `cancel` method clears all the render timers and release all resources of the instance. Optionally it accepts a single node
+to cancel timer just for it.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.default" id="apidoc.element.timeago.js.default">
+        function <span class="apidocSignatureSpan">timeago.js.</span>default
+        <span class="apidocSignatureSpan">(t, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function f(t, e){return new d(t,e)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.js.default" id="apidoc.element.timeago.js.js.default">
+        function <span class="apidocSignatureSpan">timeago.js.</span>js.default
+        <span class="apidocSignatureSpan">(t, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function f(t, e){return new d(t,e)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.js.timeago" id="apidoc.element.timeago.js.js.timeago">
+        function <span class="apidocSignatureSpan">timeago.js.</span>js.timeago
+        <span class="apidocSignatureSpan">(nowDate, defaultLocale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function timeagoFactory(nowDate, defaultLocale) {
+  return new Timeago(nowDate, defaultLocale);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.register" id="apidoc.element.timeago.js.register">
+        function <span class="apidocSignatureSpan">timeago.js.</span>register
+        <span class="apidocSignatureSpan">(t, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">register = function (t, e){p[t]=e}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    [&#x27;1 month ago&#x27;, &#x27;in 1 month&#x27;],
+    [&#x27;%s months ago&#x27;, &#x27;in %s months&#x27;],
+    [&#x27;1 year ago&#x27;, &#x27;in 1 year&#x27;],
+    [&#x27;%s years ago&#x27;, &#x27;in %s years&#x27;]
+  ][index];
+};
+// register your locale with timeago
+timeago.<span class="apidocCodeKeywordSpan">register</span>(&#x27;test_local&#x27;, test_local_dict);
+// use the locale with timeago instance
+var timeagoInstance = timeago();
+timeagoInstance.format(&#x27;2016-06-12&#x27;, &#x27;test_local&#x27;);
+```
+
+Check out more [locales](locales).
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.timeago.js.default" id="apidoc.module.timeago.js.default">module timeago.js.default</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.default.default" id="apidoc.element.timeago.js.default.default">
+        function <span class="apidocSignatureSpan">timeago.js.</span>default
+        <span class="apidocSignatureSpan">(t, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function f(t, e){return new d(t,e)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.default.cancel" id="apidoc.element.timeago.js.default.cancel">
+        function <span class="apidocSignatureSpan">timeago.js.default.</span>cancel
+        <span class="apidocSignatureSpan">(t)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cancel = function (t){var e;if(t)(e=c(t))&#x26;&#x26;(clearTimeout(e),delete v[e]);else{for(e in v)clearTimeout(e);v={}}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+js code
+```js
+var timeagoInstance = timeago();
+var nodes = document.querySelectorAll(&#x27;.needs_to_be_rendered&#x27;);
+// use render method to render nodes in real time
+timeagoInstance.render(nodes, &#x27;zh_CN&#x27;);
+// cancel real-time render for every node
+timeago.<span class="apidocCodeKeywordSpan">cancel</span>()
+// or for the specific one
+timeago.cancel(nodes[0])
+```
+
+The input for `render` method should be DOM object/array, pure javascript DOM node or jQuery DOM object.
+
+The `cancel` method clears all the render timers and release all resources of the instance. Optionally it accepts a single node
+to cancel timer just for it.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.default.register" id="apidoc.element.timeago.js.default.register">
+        function <span class="apidocSignatureSpan">timeago.js.default.</span>register
+        <span class="apidocSignatureSpan">(t, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">register = function (t, e){p[t]=e}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    [&#x27;1 month ago&#x27;, &#x27;in 1 month&#x27;],
+    [&#x27;%s months ago&#x27;, &#x27;in %s months&#x27;],
+    [&#x27;1 year ago&#x27;, &#x27;in 1 year&#x27;],
+    [&#x27;%s years ago&#x27;, &#x27;in %s years&#x27;]
+  ][index];
+};
+// register your locale with timeago
+timeago.<span class="apidocCodeKeywordSpan">register</span>(&#x27;test_local&#x27;, test_local_dict);
+// use the locale with timeago instance
+var timeagoInstance = timeago();
+timeagoInstance.format(&#x27;2016-06-12&#x27;, &#x27;test_local&#x27;);
+```
+
+Check out more [locales](locales).
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.timeago.js.timeago" id="apidoc.module.timeago.js.timeago">module timeago.js.timeago</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.timeago.timeago" id="apidoc.element.timeago.js.timeago.timeago">
+        function <span class="apidocSignatureSpan">timeago.js.</span>timeago
+        <span class="apidocSignatureSpan">(nowDate, defaultLocale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function timeagoFactory(nowDate, defaultLocale) {
+  return new Timeago(nowDate, defaultLocale);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.timeago.cancel" id="apidoc.element.timeago.js.timeago.cancel">
+        function <span class="apidocSignatureSpan">timeago.js.timeago.</span>cancel
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cancel = function (node) {
+  var tid;
+  // assigning in if statement to save space
+  if (node) {
+    tid = getTidFromNode(node);
+    if (tid) {
+      clearTimeout(tid);
+      delete timers[tid];
+    }
+  } else {
+    for (tid in timers) clearTimeout(tid);
+    timers = {};
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+js code
+```js
+var timeagoInstance = timeago();
+var nodes = document.querySelectorAll(&#x27;.needs_to_be_rendered&#x27;);
+// use render method to render nodes in real time
+timeagoInstance.render(nodes, &#x27;zh_CN&#x27;);
+// cancel real-time render for every node
+timeago.<span class="apidocCodeKeywordSpan">cancel</span>()
+// or for the specific one
+timeago.cancel(nodes[0])
+```
+
+The input for `render` method should be DOM object/array, pure javascript DOM node or jQuery DOM object.
+
+The `cancel` method clears all the render timers and release all resources of the instance. Optionally it accepts a single node
+to cancel timer just for it.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.timeago.default" id="apidoc.element.timeago.js.timeago.default">
+        function <span class="apidocSignatureSpan">timeago.js.timeago.</span>default
+        <span class="apidocSignatureSpan">(nowDate, defaultLocale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function timeagoFactory(nowDate, defaultLocale) {
+  return new Timeago(nowDate, defaultLocale);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.timeago.js.timeago.register" id="apidoc.element.timeago.js.timeago.register">
+        function <span class="apidocSignatureSpan">timeago.js.timeago.</span>register
+        <span class="apidocSignatureSpan">(locale, localeFunc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">register = function (locale, localeFunc) {
+  locales[locale] = localeFunc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    [&#x27;1 month ago&#x27;, &#x27;in 1 month&#x27;],
+    [&#x27;%s months ago&#x27;, &#x27;in %s months&#x27;],
+    [&#x27;1 year ago&#x27;, &#x27;in 1 year&#x27;],
+    [&#x27;%s years ago&#x27;, &#x27;in %s years&#x27;]
+  ][index];
+};
+// register your locale with timeago
+timeago.<span class="apidocCodeKeywordSpan">register</span>(&#x27;test_local&#x27;, test_local_dict);
+// use the locale with timeago instance
+var timeagoInstance = timeago();
+timeagoInstance.format(&#x27;2016-06-12&#x27;, &#x27;test_local&#x27;);
+```
+
+Check out more [locales](locales).
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
